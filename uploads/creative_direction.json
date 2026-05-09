@@ -1,0 +1,128 @@
+{
+  "schema_version": "3.1",
+  "project_id": "p_911ac24e7c",
+  "generated_at": "2026-05-09T22:05:00Z",
+  "skill_version": "synthesizer@1.0.0",
+  "phase": "1-mvp",
+  "selected_base_synth": "synthesis",
+  "tariff": "landing",
+  "language": "en",
+
+  "style_dimensions": {
+    "formality": 0.85,
+    "density": 0.4,
+    "decoration": 0.05,
+    "energy": 0.4,
+    "era_reference": "2024-editorial",
+    "color_temperature": "warm"
+  },
+
+  "color_tokens": {
+    "primary": "#16332B",
+    "surface": "#FAF7F2",
+    "text": "#0A0A0A",
+    "accent": "#EB0000",
+    "accent_secondary": "#1B2A38",
+    "muted": "#6B6258",
+    "border": "#E6E0D6",
+    "_palette_intent": "Warm-neutral cream surface (#FAF7F2) with Kohler-black text (#0A0A0A). Primary forest-green (#16332B) is the dark trade-trust accent per brief; navy (#1B2A38) is the secondary dark accent option. #EB0000 is the BelBes invariant — used statusно (live showroom-open indicator, urgent contractor-call accent), never as decorative chrome. No gradients, no neons."
+  },
+
+  "typography": {
+    "display": {
+      "family": "Cormorant Garamond",
+      "weights": [400, 500, 600, 700],
+      "license": "google-fonts",
+      "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+    },
+    "body": {
+      "family": "Source Serif 4",
+      "weights": [400, 500, 600],
+      "license": "google-fonts",
+      "google_fonts_url": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600&display=swap"
+    },
+    "mono": null,
+    "_typography_intent": "Brief explicitly forbids Inter and modern SaaS sans, requires trade serif wordmark in Cormorant/Domaine/Tiempos register. Domaine and Tiempos are commercial (license risk for Phase 1) — mapped to open-source Cormorant Garamond (display) which sits in the same heritage-serif register and is monogram-readable for a wordmark. Body is Source Serif 4 (Adobe → Google Fonts open-source) for editorial long-form readability. No mono — not a tech niche."
+  },
+
+  "structure": {
+    "sitemap": [
+      {
+        "path": "/",
+        "title": "Moran Supply — Specialty Plumbing for the East Bay Since 1980",
+        "sections": [
+          {
+            "id": "hero",
+            "type": "hero",
+            "intent": "Set editorial trade-supply tone. Lead with main_message and primary CTA (Visit Showroom). Verifiable facts only: 1980, Oakland, Kohler & Grohe showroom.",
+            "primary_cta": "Visit Our Kohler Showroom",
+            "secondary_cta": "Call 510-652-7437"
+          },
+          {
+            "id": "brands",
+            "type": "brand_wall",
+            "intent": "Brand-as-trust signal: Kohler, Grohe, A.O. Smith, Takagi. Wordmarks set in restraint, not logo carousel. Lists categories carried (kitchen/bath fixtures, faucets, tankless heaters, piping/fittings) under each brand or as adjacent rail — merges required_sections 'brands' + 'what_we_sell'."
+          },
+          {
+            "id": "showrooms",
+            "type": "showroom_feature",
+            "intent": "Showroom-as-destination per niche-intel: 'come touch it' is the conversion. Two physical showrooms (Kohler Showroom + Bathroom Showroom) at 415 40th Street. Hours, address, photography of actual fixtures-as-design-objects (not catalog renders)."
+          },
+          {
+            "id": "family_history",
+            "type": "narrative",
+            "intent": "Three-generation, 46-years-on-the-same-block story as primary section, not buried About Us. Long-form serif headline; verifiable facts only — founded 1980, family-owned, East Bay block."
+          },
+          {
+            "id": "contact",
+            "type": "contact",
+            "intent": "Address (415 40th Street, Oakland CA 94609), phone (510-652-7437), fax, hours (Mon–Fri 7:00–4:30, closed weekends), tertiary custom-request form. Map of Oakland location. No generic contact-form-as-default — phone and walk-in are the real channels."
+          }
+        ]
+      }
+    ],
+    "_structure_intent": "Brief required_sections lists 6; landing tariff caps at 5. Merged 'brands' + 'what_we_sell' into a single brand-wall section (brands carry their offerings inline) since the conceptual unit for this client is brand-led specialty supply. CTAs follow brief priority: visit_showroom (primary) > call (secondary) > custom request (fallback)."
+  },
+
+  "image_briefs": [
+    {
+      "id": "img_hero_showroom_fixture",
+      "purpose": "hero",
+      "placement": "Hero section, full-bleed or right-aligned editorial composition.",
+      "subject": "Single Kohler kitchen or bathroom fixture (faucet or sink) photographed in the actual Moran Supply Oakland showroom, treated as a design object — not a catalog render and not a smiling-stock-family scene. Soft natural daylight from showroom front window; warm-neutral wall behind (cream/off-white); brushed-nickel or chrome finish on fixture catches light. Composition leaves negative space for headline overlay.",
+      "style_anchors": [
+        "editorial product photography (think Bon Appétit / Kinfolk product shots)",
+        "Kohler official lifestyle imagery — but shot in this specific Oakland showroom",
+        "warm-neutral cream environment, not white seamless"
+      ],
+      "must_avoid": [
+        "stock-photo families",
+        "contractor-with-clipboard tropes",
+        "manufacturer catalog renders",
+        "blue-tinted plumbing-trade photography",
+        "1990s plumbing-shop tropes"
+      ],
+      "aspect_ratio": "16:10",
+      "approx_resolution": "2400x1500",
+      "alt_text_seed": "Kohler kitchen faucet displayed in the Moran Supply Oakland showroom, warm cream wall and natural light"
+    }
+  ],
+
+  "video_briefs": [],
+
+  "composition": {},
+
+  "arbiter_reasoning": "Phase 1 Synthesizer (single, no trio). Started from MVP conservative vector (formality 0.85, density 0.4, decoration 0.05, energy 0.4, era_reference 60s-swiss-modernism, color_temperature neutral) and made two conscious adjustments justified by the brief: (1) era_reference 60s-swiss-modernism → 2024-editorial because brief.branding.typography_direction explicitly forbids modern SaaS sans and requires a trade serif wordmark in the Cormorant/Domaine/Tiempos register — Swiss-modernism is a sans-serif Helvetica register and would directly contradict the client direction; (2) color_temperature neutral → warm because brief.branding.preferred_palette_direction is explicit about a warm-neutral cream/off-white base with a deep navy or forest green dark accent. Other dimensions stay at conservative defaults — 46-year established trade business with phone-first contractor audience matches high formality, low decoration, restrained density, calm energy. Typography mapped from commercial Domaine/Tiempos (license risk for Phase 1) to open-source Cormorant Garamond (display) and Source Serif 4 (body), both in the same heritage-serif register and on Google Fonts. #EB0000 placed as accent (statusный role — live showroom-open indicator, urgent contractor-call moment) not primary, since brief explicitly forbids bright/neon palettes; primary forest-green (#16332B) carries the dark trade-trust load per brief. Sitemap merged brief's 6 required_sections into 5 (landing cap) by absorbing 'what_we_sell' into 'brands' as a brand-led product wall — conceptually unified since this client's offering is brand-defined specialty supply. composition left empty (Phase 1; COMP-002 prompt-assembly will populate when ≥12 components exist).",
+
+  "anti_claims_observed": [
+    "No 'Kohler Authorized Dealer' claim in copy intent (not verified)",
+    "No 'BBB member' claim",
+    "No unverifiable trust-count claims ('thousands of contractors', '5000+ projects')",
+    "Only verifiable facts surfaced: brands carried, founded 1980, 46 years, three-generation family ownership, 415 40th Street Oakland location"
+  ],
+
+  "_inputs_consumed": {
+    "brief_path": "/projects/p_911ac24e7c/outputs/brief.json",
+    "niche_intel_path": "/projects/p_911ac24e7c/outputs/niche_intel.json"
+  }
+}
